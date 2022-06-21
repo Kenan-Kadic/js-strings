@@ -27,3 +27,95 @@ const restaurant = {
     },
   },
 };
+
+const airline = 'TAP air Portugal';
+const plane = 'A320';
+
+console.log(plane[0]);
+console.log(plane[1]);
+console.log(plane[2]);
+console.log('B737'[0])
+
+console.log(airline.length);
+console.log('B737', length);
+
+//you can get an index and last index
+console.log(airline.indexOf('r'));
+console.log(airline.lastIndexOf('r'));
+
+// you can search for stuff
+
+console.log(airline.indexOf('portugal'));
+
+// you can slice stuff
+console.log(airline.slice(4));
+//slice does not change the original string
+
+console.log(airline.slice(4,7));
+// gives u air...stops extracting  before it reaches index number 7
+
+// slice with indexes
+console.log(airline.slice(0, airline.indexOf(' ')))
+
+console.log(airline.slice(airline.lastIndexOf(' ') + 1));
+
+//remove items -- pull out last 2 letters
+console.log(airline.slice(-2));
+
+console.log(airline.slice(1, -1));
+
+// CHECK MIDDLE SEAT
+const checkMiddleSeat = function(seat){
+  const s = seat.slice(-1);
+  if(s === 'B' || s === 'E') {
+    console.log('You got the middle seat 😂')
+  } else {
+    console.log('you got lucky 😎')
+  }
+}
+
+checkMiddleSeat('11B');
+checkMiddleSeat('23C');
+checkMiddleSeat('CE');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
