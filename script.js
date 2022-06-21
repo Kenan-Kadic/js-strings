@@ -78,6 +78,49 @@ checkMiddleSeat('11B');
 checkMiddleSeat('23C');
 checkMiddleSeat('CE');
 
+// slice means to cut out a box that includes the first index but does not include last index
+
+// slice at -1 just cuts off the last letter
+
+// split turns a string into an array by putting the letters one by one out there
+
+//JS DOES SOMETHING CALLED BOXING
+// it takes strings and when you call a method on that string it converts it to
+// an object which holds the same content as the string
+// then the method works on the string
+// when the OBJECT string gets sliced or whatever other method you use, then
+// it gets converted back to a regular string
+
+// ---- STRINGS LESSON 2
+
+console.log(airline.toLowerCase());
+console.log(airline.toUpperCase());
+
+const passenger = 'JoNAS';
+const passengerLower = passenger.toLowerCase();
+const passengerCorrect = passengerLower[0].toUpperCase() + passengerLower.slice(1);
+console.log(passengerCorrect);
+
+const email = 'hello@jonas.io';
+const loginEmail = ' Hello@Jonas.Io \n';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
